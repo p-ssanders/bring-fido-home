@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: rgb(190, 190, 190);
+    color: #242424;
+    background-image: url(https://wallpapercave.com/wp/wp2320584.jpg);
+}
+
+header, section, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+section {
+    flex-direction: column;
+}
