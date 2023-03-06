@@ -1,12 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
 
 body {
-    height: 100%;
-    width: 100vw;
     font-family: Arial, sans-serif;
     background-color: rgb(190, 190, 190);
     color: #242424;
