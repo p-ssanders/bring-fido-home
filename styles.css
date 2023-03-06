@@ -10,7 +10,6 @@ body {
 }
 
 main {
-    min-height: 90vh;
     display: flex;
     flex-direction: column;
 }
@@ -25,8 +24,15 @@ header, section, footer {
 section {
     flex: 1;
     flex-direction: column;
+    min-height: 95vh;
 }
 
 section:nth-child(odd) {
+    /* background: linear-gradient(to top, azure, rgb(190, 190, 190)); */
     background-color: azure;
+}
+
+section:nth-child(even) {
+    /* background: linear-gradient(to top, rgb(190, 190, 190),  azure); */
+    background-color:rgb(190, 190, 190);
 }
