@@ -5,12 +5,17 @@
   }
 
 body {
+    height: 100%;
     width: 100vw;
-    min-height: 100vh;
     font-family: Arial, sans-serif;
     background-color: rgb(190, 190, 190);
     color: #242424;
-    background-image: url(https://wallpapercave.com/wp/wp2320584.jpg);
+}
+
+main {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header, section, footer {
@@ -21,5 +26,10 @@ header, section, footer {
 }
 
 section {
+    flex: 1;
     flex-direction: column;
+}
+
+section:nth-child(odd) {
+    background-color: azure;
 }
