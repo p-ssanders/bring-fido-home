@@ -1,6 +1,6 @@
-#   bringing-fido-home
+#   bring-fido-home
 
-A static HTML/CSS site for Adina's Bringing Home Fido business.
+A static HTML/CSS site for Bring Fido Home business.
 
 ##  Running Locally
 
