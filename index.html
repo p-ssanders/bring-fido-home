@@ -10,6 +10,7 @@
     <title>Bring Fido Home</title>
   </head>
   <body>
+    <script src="https://unpkg.com/htmx.org@1.8.6"></script>
     <header>
         <h1>Bring Fido Home 🐶</h1>
         <nav>
@@ -34,18 +35,20 @@
         <section id="contact">
           <h1>Contact</h1>
           <p>Get in touch with Adina about your new dog!</p>
-          <form method="post">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Full name" required>
+          <form id="contact-form"
+                hx-post="https://5wbx25hgt3.execute-api.us-west-1.amazonaws.com/default/bfh-contact-form"
+                hx-target="#contact">
+            <label for="name">Name (required)</label>
+            <input type="text" name="name" id="name" placeholder="Full name" maxlength="100" required>
 
-            <label for="email">E-mail</label>
-            <input type="email" name="email" id="email" placeholder="excited@new-dog.com" required>
+            <label for="email">E-mail (required)</label>
+            <input type="email" name="email" id="email" placeholder="excited@new-dog.com" maxlength="100" required>
 
             <label for="phone">Phone</label>
-            <input type="tel" name="phone" id="phone" placeholder="123-555-1234">
+            <input type="tel" name="phone" id="phone" placeholder="123-555-1234" maxlength="100">
 
             <label for="dog-name">Dog's Name</label>
-            <input type="text" name="dog-name" id="dog-name" placeholder="Fido">
+            <input type="text" name="dog-name" id="dog-name" placeholder="Fido" maxlength="100">
 
             <label for="gotcha-date">Gotcha Date</label>
             <input type="date" name="gotcha-date" id="gotcha-date">
