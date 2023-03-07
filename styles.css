@@ -86,6 +86,7 @@ p {
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 33vw;
 }
 
@@ -95,18 +96,30 @@ form {
   }
 }
 
+form > * {
+  width: 75%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+}
+
+@media (max-width: 500px) {
+  form > * {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+  }
+}
+
 form label {
   margin-top: 1em;
   margin-bottom: .2em;
+  padding-left: 0;
   font-size: .6em;
 }
 
-form input[type=submit] {
-  margin: 2em;
-}
-
 form input {
-  padding: 10px;
   margin: 0.1em;
   border: 0;
 }
@@ -116,6 +129,18 @@ select:focus,
 textarea:focus {
   outline: none;
   box-shadow: 0 0 0 4px #e8eceb;
+}
+
+form input[type=submit] {
+  width: 50%;
+  margin: 2em;
+  font-size: .75em;
+}
+
+@media (max-width: 500px) {
+  form input[type=submit] {
+    width: 75%;
+  }
 }
 
 footer {
