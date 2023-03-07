@@ -1,10 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-  }
+}
 
 body {
     font-family: Arial, sans-serif;
+    font-size: 1.5em;
     background-color: #e8eceb;
     color: #2d3e4e;
 }
@@ -18,8 +19,8 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 1rem;
-    margin-left: 1rem;
+    margin-top: 1em;
+    margin-left: 1em;
 }
 
 header > h1 {
@@ -27,7 +28,7 @@ header > h1 {
 }
 
 header > nav {
-    margin-right: 1rem;
+    margin-right: 1em;
 }
 
 header ul {
@@ -36,7 +37,7 @@ header ul {
 
 header ul > li {
     display: inline;
-    margin-left: 1rem;
+    margin-left: 1em;
 }
 
 a {
@@ -44,11 +45,15 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+  color: #8cbdb9;
+}
+
 section, footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 1em;
 }
 
 section {
