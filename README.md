@@ -1,6 +1,6 @@
 #   bring-fido-home
 
-A static HTML/CSS site for Bring Fido Home business.
+A static HTML/CSS site for Bring Fido Home dog onboarding business.
 
 ##  Running Locally
 
