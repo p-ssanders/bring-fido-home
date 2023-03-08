@@ -26,6 +26,7 @@ header {
 @media (max-width: 500px) {
   header {
     flex-direction: column;
+    margin-left: 0;
   }
 }
 
@@ -152,5 +153,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1em;
+}
+
+footer > p {
+  margin: 0;
+  font-size: .5em;
+}
+
+@media (max-width: 500px) {
+  footer > p {
+    padding: 0;
+  }
 }
