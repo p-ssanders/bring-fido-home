@@ -130,7 +130,7 @@ form input {
   font-size: .75em;
 }
 
-input:focus,
+form input:focus,
 select:focus,
 textarea:focus {
   outline: none;
