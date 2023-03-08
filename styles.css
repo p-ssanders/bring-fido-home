@@ -78,6 +78,16 @@ section:nth-child(odd) {
   background-color: #8cbdb9;
 }
 
+section.split {
+  flex-direction: row;
+}
+section.split > div {
+  flex: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
 p {
   margin-top: 1em;
 }
@@ -131,17 +141,17 @@ form input {
   font-size: .75em;
 }
 
+form input[type=submit] {
+  width: 50%;
+  margin: 2em;
+  font-size: .75em;
+}
+
 form input:focus,
 select:focus,
 textarea:focus {
   outline: none;
   box-shadow: 0 0 0 4px #e8eceb;
-}
-
-form input[type=submit] {
-  width: 50%;
-  margin: 2em;
-  font-size: .75em;
 }
 
 @media (max-width: 500px) {
