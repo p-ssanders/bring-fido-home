@@ -29,8 +29,14 @@ header {
   }
 }
 
+@font-face {
+  font-family: 'Satisfy-Regular';
+  src: url('/Satisfy-Regular.ttf');
+}
+
 header > h1 {
   flex: 1;
+  font-family: 'Satisfy-Regular', serif;
 }
 
 header > nav {
