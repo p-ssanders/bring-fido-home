@@ -81,6 +81,13 @@ section:nth-child(odd) {
 section.split {
   flex-direction: row;
 }
+
+@media (max-width: 500px) {
+  section.split {
+    flex-direction: column;
+  }
+}
+
 section.split > div {
   flex: 1;
   align-items: center;
@@ -95,6 +102,7 @@ p {
 @media (max-width: 500px) {
   p {
     padding: 1em;
+    margin-top: 0;
   }
 }
 
