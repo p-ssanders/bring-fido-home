@@ -74,6 +74,7 @@ section > header > h1 {
   flex: 1;
   font-family: 'Satisfy-Regular', sans-serif;
   margin-left: 1em;
+  font-size: 1.75em;
 }
 
 @media (max-width: 500px) {
