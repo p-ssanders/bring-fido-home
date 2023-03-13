@@ -38,7 +38,7 @@ p {
 
 @media (max-width: 500px) {
   p {
-    padding: 1em;
+    padding: 1em 0em;
     margin-top: 0;
   }
 }
@@ -200,13 +200,14 @@ section#about p {
 }
 
 section#services > h1 {
-  margin: 1em 0em;
-  font-family: 'Satisfy-Regular', sans-serif;
+  margin: 1em 1em;
   font-size: 2em;
+  text-align: center;
 }
 
 section#services h2 {
   font-family: 'Satisfy-Regular', sans-serif;
+  text-align: center;
 }
 
 section#services > div {
@@ -222,10 +223,6 @@ section#services > div {
   }
 }
 
-section#services > p {
-  margin-top: 0;
-}
-
 section#services > div > div {
   flex: 1;
   display: flex;
@@ -235,16 +232,18 @@ section#services > div > div {
 }
 
 section#services > div > div > ul {
-  margin: 1em 2em;
-  list-style: none;
-}
-
-section#services > div > div > ul > li:before {
-  content: '✅ ';
+  margin: 1em 1em;
 }
 
 section#services .pricing {
   text-align: center;
+  font-style: italic;
+}
+
+@media (max-width: 500px) {
+  section#services .filler {
+    display: none;
+  }
 }
 
 section#contact {
