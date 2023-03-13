@@ -122,7 +122,6 @@ section#splash > header ul > li {
 }
 
 section#about h2 {
-  margin: 0 2em;
   width: 100%;
 }
 
@@ -131,10 +130,6 @@ section#about h2 {
     width: 100%;
     margin: 0;
   }
-}
-
-section#about h3 {
-  margin: 2em 2em;
 }
 
 section .subsection {
