@@ -1,9 +1,9 @@
-/*
-  #f6f4e8
-  #1d3124
-  #e59560
-  #bacec1
-*/
+:root {
+  --bg-color: #f6f4e8;
+  --bg-color-secondary: #bacec1;
+  --fg-color: #1d3124;
+  --accent-color: #e59560;
+}
 
 @font-face {
   font-family: 'Satisfy-Regular';
@@ -18,19 +18,18 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 1.5em;
-  background-color: #f6f4e8;
-  color: #1d3124;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  text-transform: uppercase;
   font-size: .75em;
 }
 
 a:hover {
-  color: #e59560;
+  color: var(--accent-color);
 }
 
 p {
@@ -45,8 +44,8 @@ p {
 }
 
 button {
-  background-color: #1d3124;
-  color: #f6f4e8;
+  background-color: var(--fg-color);
+  color: var(--bg-color);
   border-radius: 30px;
   border-width: 0;
   font-size: 1.25em;
@@ -58,8 +57,6 @@ button {
 @media (max-width: 500px) {
   button {
     font-size: 1.25em;
-    background-color: #1d3124;
-    color: #f6f4e8;
   }
 }
 
@@ -127,6 +124,7 @@ div.text > p {
 
 div.filler {
   flex: .25;
+  /* background-color : var(--accent-color); */
 }
 
 section#splash > header {
@@ -174,7 +172,7 @@ section#splash > header ul > li {
 }
 
 section#about {
-  background-color: #bacec1;
+  background-color: var(--bg-color-secondary);
 }
 
 section#about .filler {
@@ -203,6 +201,12 @@ section#about p {
 
 section#services > h1 {
   margin: 1em 0em;
+  font-family: 'Satisfy-Regular', sans-serif;
+  font-size: 2em;
+}
+
+section#services h2 {
+  font-family: 'Satisfy-Regular', sans-serif;
 }
 
 section#services > div {
@@ -212,11 +216,22 @@ section#services > div {
   margin: 1em 0em;
 }
 
+@media (max-width: 500px) {
+  section#services > div {
+    flex-direction: column;
+  }
+}
+
+section#services > p {
+  margin-top: 0;
+}
+
 section#services > div > div {
   flex: 1;
   display: flex;
   flex-direction: column;
   margin: 0em 1em;
+  min-height: 25vh;
 }
 
 section#services > div > div > ul {
@@ -233,7 +248,7 @@ section#services .pricing {
 }
 
 section#contact {
-  background-color: #bacec1;
+  background-color: var(--bg-color-secondary);
 }
 
 section#contact > div {
@@ -299,7 +314,7 @@ form input:focus,
 select:focus,
 textarea:focus {
   outline: none;
-  box-shadow: 0 0 0 4px #f6f4e8;
+  box-shadow: 0 0 0 4px var(--bg-color);
 }
 
 @media (max-width: 500px) {
@@ -309,7 +324,7 @@ textarea:focus {
 }
 
 footer {
-  background-color: #bacec1;
+  background-color: var(--bg-color-secondary);
   display: flex;
   justify-content: center;
   align-items: center;
