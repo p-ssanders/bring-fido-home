@@ -68,75 +68,12 @@ main {
   flex-direction: column;
 }
 
-main:nth-child(even) {
-  background-color: #bacec1;
-}
-
 section {
   flex: 1;
   flex-direction: column;
   min-height: 100vh;
   display: flex;
   align-items: center;
-}
-
-section#splash > header {
-  flex: .2;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  margin-top: 1em;
-}
-
-@media (max-width: 500px) {
-  section#splash > header {
-    flex-direction: column;
-    margin-left: 0;
-    align-items: center;
-  }
-}
-
-section#splash > header > h1 {
-  flex: 1;
-  font-family: 'Satisfy-Regular', sans-serif;
-  margin-left: 1em;
-  font-size: 2em;
-}
-
-@media (max-width: 500px) {
-  section#splash > header > h1 {
-    flex: 0;
-    margin: 0;
-  }
-}
-
-section#splash > header > nav {
-  margin-right: 1em;
-}
-
-section#splash > header ul {
-  list-style: none;
-}
-
-section#splash > header ul > li {
-  display: inline;
-  margin-left: 1em;
-}
-
-section#about .filler {
-  flex: 1;
-}
-
-section#about h2 {
-  width: 100%;
-}
-
-@media (max-width: 500px) {
-  section#about h2 {
-    width: 100%;
-    margin: 0;
-  }
 }
 
 section .subsection {
@@ -192,7 +129,75 @@ div.filler {
   flex: .25;
 }
 
-div.filler img {
+section#splash > header {
+  flex: .2;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-top: 1em;
+}
+
+@media (max-width: 500px) {
+  section#splash > header {
+    flex-direction: column;
+    margin-left: 0;
+    align-items: center;
+  }
+}
+
+section#splash > header > h1 {
+  flex: 1;
+  font-family: 'Satisfy-Regular', sans-serif;
+  margin-left: 1em;
+  font-size: 2em;
+}
+
+@media (max-width: 500px) {
+  section#splash > header > h1 {
+    flex: 0;
+    margin: 0;
+  }
+}
+
+section#splash > header > nav {
+  margin-right: 1em;
+}
+
+section#splash > header ul {
+  list-style: none;
+}
+
+section#splash > header ul > li {
+  display: inline;
+  margin-left: 1em;
+}
+
+section#about {
+  background-color: #bacec1;
+}
+
+section#about .filler {
+  flex: 1;
+}
+
+section#about h2 {
+  width: 100%;
+}
+
+@media (max-width: 500px) {
+  section#about h2 {
+    width: 100%;
+    margin: 0;
+    font-size: 1.5em;
+  }
+}
+
+section#about h3 {
+  margin-top: 1em;
+}
+
+section#about p {
   width: 100%;
 }
 

@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="preload" href="/Satisfy-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/about.jpg" as="font" type="image/jpeg">
   <title>Bring Fido Home</title>
 </head>
 <body>
@@ -39,13 +38,14 @@
     <section id="about">
       <div class="split">
         <div class="filler">
-          <img src="/about.jpg"/>
+          &nbsp;
         </div>
         <div class="text">
           <h2>Have you heard that bringing home a new dog is like bringing home a baby?</h2>
           <h3>Well, after having done both, it kind of is!</h3>
           <p> They are a lot of work and there is a learning curve for both your family and your new dog to happily coexist.</p>
-          <p>Be best prepared with Bring Fido Home to ensure the grand entrance and your new life together are as smooth and sweet as possible.</p>
+          <p>Be prepared with Bring Fido Home to ensure the grand entrance and your new life together are as smooth and sweet as possible.</p>
+          <p><a href="#services"><button>How We Help</button></a></p>
         </div>
       </div>
     </section>
@@ -84,7 +84,7 @@
     <section id="contact">
       <h1>Contact</h1>
       <p>Get in touch with Adina about your new dog!</p>
-      <form id="contact-form" hx-post="https://5wbx25hgt3.execute-api.us-west-1.amazonaws.com/default/contact-form"
+      <form id="contact-form" hx-post="https://5wbx25hgt3.execute-api.us-west-1.amazonaws.com/default/bfh-contact-form"
         hx-target="#contact">
         <label for="name">Name (required)</label>
         <input type="text" name="name" id="name" placeholder="Full name" maxlength="100" required>
@@ -108,8 +108,7 @@
   <footer>
     <p class="copyright">© BringFidoHome.com, LLC. All rights reserved.</p>
   </footer>
-  <script src="https://unpkg.com/htmx.org@1.8.6" integrity="sha384-Bj8qm/6B+71E6FQSySofJOUjA/gq330vEqjFx9LakWybUySyI1IQHwPtbTU7bNwx" crossorigin="anonymous" defer></script>
-  <!-- Google tag (gtag.js) -->
+  <script defer src="https://unpkg.com/htmx.org@1.8.6" integrity="sha384-Bj8qm/6B+71E6FQSySofJOUjA/gq330vEqjFx9LakWybUySyI1IQHwPtbTU7bNwx" crossorigin="anonymous"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWZKBT6KDW"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
