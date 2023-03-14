@@ -22,10 +22,23 @@ body {
   color: var(--fg-color);
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  flex: 1;
+  flex-direction: column;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
 a {
   color: inherit;
   text-decoration: none;
-  font-size: .75em;
+  font-size: 1em;
 }
 
 a:hover {
@@ -56,21 +69,8 @@ button {
 
 @media (max-width: 500px) {
   button {
-    font-size: 1.25em;
+    font-size: 1em;
   }
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-}
-
-section {
-  flex: 1;
-  flex-direction: column;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
 }
 
 section .subsection {
@@ -81,6 +81,7 @@ section .subsection {
 .split {
   display: flex;
   flex-direction: row;
+  flex: 1;
 }
 
 @media (max-width: 500px) {
@@ -102,7 +103,6 @@ div.text {
 @media (max-width: 500px) {
   div.text {
     margin: 1em 1em;
-    justify-content: center;
     align-items: center;
     text-align: center;
   }
@@ -113,7 +113,7 @@ div.text > h2 {
 }
 
 div.text > p {
-  width: 50%;
+  width: 75%;
 }
 
 @media (max-width: 500px) {
@@ -123,8 +123,14 @@ div.text > p {
 }
 
 div.filler {
-  flex: .25;
+  flex: .75;
   /* background-color : var(--accent-color); */
+}
+
+@media (max-width: 500px) {
+  div.filler {
+    display: none;
+  }
 }
 
 section#splash > header {
@@ -162,6 +168,12 @@ section#splash > header > nav {
   margin-right: 1em;
 }
 
+@media (max-width: 500px) {
+  section#splash > header > nav {
+    margin-right: 0;
+  }
+}
+
 section#splash > header ul {
   list-style: none;
 }
@@ -173,10 +185,6 @@ section#splash > header ul > li {
 
 section#about {
   background-color: var(--bg-color-secondary);
-}
-
-section#about .filler {
-  flex: 1;
 }
 
 section#about h2 {
@@ -200,7 +208,7 @@ section#about p {
 }
 
 section#services > h1 {
-  margin: 1em 1em;
+  margin: 1em 1em .5em 1em;
   font-size: 2em;
   text-align: center;
 }
@@ -214,7 +222,6 @@ section#services > div {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin: 1em 0em;
 }
 
 @media (max-width: 500px) {
@@ -231,6 +238,12 @@ section#services > div > div {
   min-height: 25vh;
 }
 
+@media (max-width: 500px) {
+  section#services .filler {
+    display: none;
+  }
+}
+
 section#services > div > div > ul {
   margin: 1em 1em;
 }
@@ -238,16 +251,11 @@ section#services > div > div > ul {
 section#services .pricing {
   text-align: center;
   font-style: italic;
+  padding-bottom: 0;
 }
 
 section#services .booknow {
   text-align: center;
-}
-
-@media (max-width: 500px) {
-  section#services .filler {
-    display: none;
-  }
 }
 
 section#contact {
