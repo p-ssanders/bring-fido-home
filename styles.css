@@ -240,6 +240,10 @@ section#services .pricing {
   font-style: italic;
 }
 
+section#services .booknow {
+  text-align: center;
+}
+
 @media (max-width: 500px) {
   section#services .filler {
     display: none;
@@ -271,6 +275,7 @@ section#contact > div > div {
 
 section#contact > div > p {
   padding: 1em 1em;
+  text-align: center;
 }
 
 form {
