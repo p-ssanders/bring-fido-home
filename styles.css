@@ -44,7 +44,7 @@ p {
 }
 
 button {
-  background-color: var(--fg-color);
+  background-color: var(--accent-color);
   color: var(--bg-color);
   border-radius: 30px;
   border-width: 0;
