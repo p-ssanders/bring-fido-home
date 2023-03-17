@@ -262,7 +262,8 @@ section#services h2 {
 section#services > div {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  justify-content: center;
+  margin-top: 1em;
 }
 
 @media (max-width: 500px) {
@@ -272,7 +273,7 @@ section#services > div {
 }
 
 section#services > div > div {
-  flex: 1;
+  flex: .5;
   display: flex;
   flex-direction: column;
   margin: 0em 1em;
