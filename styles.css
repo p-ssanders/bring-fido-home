@@ -1,7 +1,7 @@
 :root {
   --bg-color: rgb(247, 241, 237);
   --bg-color-secondary: rgb(254, 190, 176, 25%);
-  --fg-color: rgb(70, 70, 70);
+  --fg-color: rgb(60, 60, 60);
   --accent-color: #3d5a5b;
   --accent-color-secondary: #2f365f;
 }
@@ -105,8 +105,9 @@ section#splash > header ul > li:has(button) {
 section#splash > header ul > li button {
   padding: .75rem 1rem;
   border-radius: 8px;
-  transition: background-color 00ms ease;
-  font-size: .75em;
+  transition: background-color 300ms ease;
+  font-family: "BebasNeue-Regular", sans-serif;
+  font-size: 1em;
   text-transform: uppercase;
 }
 
@@ -144,7 +145,7 @@ button {
   background-color: var(--accent-color);
   color: var(--bg-color);
   border-radius: 8px;
-  transition: background-color 00ms ease;
+  transition: background-color 300ms ease;
   border-width: 0;
   font-size: 1.25em;
   padding: .5em 2.5em;
@@ -371,7 +372,7 @@ form input[type=submit] {
   background-color: var(--accent-color);
   color: var(--bg-color);
   border-radius: 8px;
-  transition: background-color 00ms ease;
+  transition: background-color 300ms ease;
   border-width: 0;
   font-size: 1.25em;
   padding: .5em 2.5em;
