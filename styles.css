@@ -7,8 +7,13 @@
 }
 
 @font-face {
-  font-family: 'BebasNeue-Regular';
-  src: url('/BebasNeue-Regular.ttf');
+  font-family: 'Satisfy-Regular';
+  src: url('/Satisfy-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('/Roboto-Regular.ttf');
 }
 
 * {
@@ -17,7 +22,7 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Roboto-Regular', sans-serif;
   font-size: 1.5em;
   background-color: var(--bg-color);
   color: var(--fg-color);
@@ -50,12 +55,13 @@ section#splash > header {
     flex-direction: column;
     margin-left: 0;
     align-items: center;
+    flex: 0;
   }
 }
 
 section#splash > header > h1 {
   flex: 1;
-  font-family: 'BebasNeue-Regular', sans-serif;
+  font-family: 'Satisfy-Regular', sans-serif;
   margin-left: 2.5em;
   font-size: 2.5em;
 }
@@ -64,6 +70,7 @@ section#splash > header > h1 {
   section#splash > header > h1 {
     flex: 0;
     margin: 0;
+    font-size: 2.0em;
   }
 }
 
@@ -73,7 +80,7 @@ section#splash > header > nav {
 
 @media (max-width: 500px) {
   section#splash > header > nav {
-    margin-right: 0;
+    margin: 1em 0em;
   }
 }
 
@@ -84,13 +91,14 @@ section#splash > header ul {
 }
 
 section#splash > header ul > li {
+  flex: 1;
   margin-left: .5em;
   margin-right: .5em;
-  text-transform: uppercase;
+  text-align: center;
 }
 
 section#splash > header ul > li > a {
-  font-family: "BebasNeue-Regular", sans-serif;
+  font-family: "Satisfy-Regular", sans-serif;
   color: inherit;
   text-decoration: none;
 }
@@ -100,17 +108,10 @@ section#splash > header ul > li > a:hover {
 }
 
 section#splash > header ul > li button {
-  padding: .75em .75em;
-  transition: background-color 300ms ease;
-  font-family: "BebasNeue-Regular", sans-serif;
+  padding: .25em .5em;
+  font-family: "Satisfy-Regular", sans-serif;
   font-size: 1em;
-  text-transform: uppercase;
-}
-
-@media (max-width: 500px) {
-  section#splash > header ul > li button {
-    padding: .5em .5em;
-  }
+  margin: 0;
 }
 
 section#splash > header ul > li button:hover {
@@ -142,7 +143,6 @@ button {
   border-radius: 8px;
   transition: background-color 300ms ease;
   border-width: 0;
-  font-family: 'BebasNeue-Regular', sans-serif;
   font-size: 1.25em;
   padding: .5em 2.5em;
   margin: 1em 0em;
@@ -173,6 +173,7 @@ section .subsection {
 @media (max-width: 500px) {
   .split {
     flex-direction: column;
+    margin-top: 2em;
   }
 }
 
@@ -251,7 +252,7 @@ section#services > h1 {
 }
 
 section#services h2 {
-  font-family: 'BebasNeue-Regular', sans-serif;
+  font-family: 'Satisfy-Regular', sans-serif;
 }
 
 section#services > div {
@@ -300,8 +301,9 @@ section#contact {
 }
 
 section#contact > h1 {
-  margin: 1em 1em;
+  margin: 1em 0em;
   margin-bottom: 0;
+  font-family: 'Satisfy-Regular', sans-serif;
   font-size: 2em;
   text-align: center;
 }
