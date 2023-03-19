@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="samsanders.dev" />
-  <meta name="description" content="TODO" />
+  <meta name="description" content="Bring your new dog home with the knowledge and confidence to smoothly integrate them into your home and your life." />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="preload" href="/Satisfy-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/fonts/Satisfy-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/images/splash.jpg" as="image" type="image/jpg" crossorigin>
   <title>Bring Fido Home</title>
 </head>
 <body>
@@ -19,16 +19,14 @@
         <h1>Bring Fido Home</h1>
         <nav>
           <ul>
-            <li><a href="#about">about</a></li>
-            <li><a href="#services">services</a></li>
             <li><a href="#contact"><button>contact</button></a></li>
           </ul>
         </nav>
       </header>
-      <div class="subsection split">
+      <div class="split">
         <div class="text">
           <h2>Set your new dog up for success!</h2>
-          <p>Bring your new dog home with the knowledge and confidence to smoothly integrate them into your home <i>and</i> your life.</p>
+          <p>Bring Fido Home is a personalized how-to experience for dog/family integration.</p>
           <p><a href="#about"><button>Learn More</button></a></p>
         </div>
         <div class="filler">
@@ -39,7 +37,7 @@
     <section id="about">
       <div class="split">
         <div class="filler">
-          &nbsp;
+          <img src="/images/about-filler.jpg">
         </div>
         <div class="text">
           <h2>Have you heard that bringing a new dog home is like bringing home a baby?</h2>
@@ -53,7 +51,7 @@
       <div>
         <div>
           <h2>Bring Fido Home</h2>
-          <p>Up to one hour virtual meeting where we will discuss the below and tailor to your specific questions or areas of concerns.</p>
+          <p>Let's meet and discuss the following items, while tailoring to your specific questions and areas of concerns.</p>
           <ul>
             <li>The very beginnings</li>
             <li>Crate training</li>
@@ -65,15 +63,18 @@
             <li>Products</li>
             <li>Recommended local trainers and classes</li>
           </ul>
-          <p>
-          At the end of our discussion you will be sent a one sheet of information to keep on hand for future reference.
-          In person meetings are offered for Boulder county only, other locations are by discretion and additional travel fee will apply.
-          </p>
-          <p class="pricing">$75 for virtual meeting, $100 for in-person</p>
+          <p>At the end of our discussion you will be sent a sheet of information to keep on hand for future reference. In person meetings are offered for Boulder county only, other locations are by discretion and additional travel fee will apply.</p>
+          <p class="pricing">$75/hour virtual meeting, $100/hour for in-person</p>
           <p class="booknow"><a href="#contact"><button>Book Now</button></a></p>
+        </div>
+        <div class="filler one">
+          &nbsp;
         </div>
       </div>
       <div>
+        <div class="filler two">
+          &nbsp;
+        </div>
         <div>
           <h2>Fido & Kiddo</h2>
           <p>
@@ -84,20 +85,21 @@
           <li>Dog and children introductions</li>
           <li>Best practices for kid/dog interactions</li>
           </ul>
-          <p class="pricing">$135 for one-hour virtual meeting</p>
+          <p class="pricing">$135/hour virtual meeting</p>
           <p class="booknow"><a href="#contact"><button>Book Now</button></a></p>
         </div>
       </div>
       <div>
         <div>
           <h2>Fido Concierge</h2>
-          <p>
-            Up to one hour virtual meeting where we will discuss the below and tailor to your specific questions or areas of concerns.
-            At the end of our discussion you will be sent a one sheet of information to keep on hand for future reference.
-            In person meetings are offered for Boulder county only, other locations are by discretion and additional travel fee will apply.
-          </p>
-          <p class="pricing">$135 (offering is only available with purchase of a package)</p>
+          <p>Feeling like you'd like to have some extra TLC?</p>
+          <p>The concierge offering will you to text me with any questions that come up during the first month of having your dog -- even those "stupid" ones where you just want to get a second opinion or make sure something is normal. I will get back to you within one business day via text.</p>
+          <p>This offering is only available as an add-on to a package.</p>
+          <p class="pricing">$135 add-on</p>
           <p class="booknow"><a href="#contact"><button>Book Now</button></a></p>
+        </div>
+        <div class="filler three">
+          &nbsp;
         </div>
       </div>
     </section>
@@ -130,8 +132,8 @@
   <footer>
     <p class="copyright">© BringFidoHome.com, LLC. All rights reserved.</p>
   </footer>
-  <script defer src="https://unpkg.com/htmx.org@1.8.6" integrity="sha384-Bj8qm/6B+71E6FQSySofJOUjA/gq330vEqjFx9LakWybUySyI1IQHwPtbTU7bNwx" crossorigin="anonymous"></script>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FWZKBT6KDW"></script>
+  <script defer async src="https://unpkg.com/htmx.org@1.8.6" integrity="sha384-Bj8qm/6B+71E6FQSySofJOUjA/gq330vEqjFx9LakWybUySyI1IQHwPtbTU7bNwx" crossorigin="anonymous"></script>
+  <script defer async src="https://www.googletagmanager.com/gtag/js?id=G-FWZKBT6KDW"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
