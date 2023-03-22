@@ -43,6 +43,8 @@ section {
 
 section#splash {
   background-image: url('/images/splash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 500px) {
