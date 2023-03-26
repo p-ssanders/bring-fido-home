@@ -76,7 +76,7 @@ section#splash > header {
 section#splash > header > h1 {
   flex: 1;
   font-family: 'Satisfy-Regular', sans-serif;
-  text-shadow: 1px 1px 1px var(--accent-color-secondary);
+  text-shadow: 1px 1px 1px var(--accent-color);
   margin-left: 2.5em;
   font-size: 2.5em;
 }
