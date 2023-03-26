@@ -125,7 +125,7 @@ section#splash > header ul > li button:hover {
 @media (max-width: 500px) {
   .split {
     flex-direction: column;
-    margin-top: 2em;
+    margin-top: 3em;
   }
 }
 
@@ -140,7 +140,7 @@ section#splash > div.split {
 }
 
 div.text {
-  margin: 4em 6em;
+  margin: 6em 6em;
 }
 
 @media (max-width: 500px) {
@@ -244,76 +244,6 @@ section#about h3 {
 
 section#about p {
   width: 100%;
-}
-
-section#services > h1 {
-  margin: 1em 1em .5em 1em;
-  font-size: 2em;
-  text-align: center;
-}
-
-section#services h2 {
-  font-family: 'Satisfy-Regular', sans-serif;
-}
-
-section#services > div {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-section#services > div:nth-child(odd) {
-  margin-left: 1em;
-}
-
-section#services > div:nth-child(even) {
-  margin-right: 1em;
-}
-
-@media (max-width: 500px) {
-  section#services > div{
-    margin: 0em 1em;
-  }
-}
-
-@media (max-width: 500px) {
-  section#services > div {
-    flex-direction: column;
-  }
-}
-
-section#services > div > div {
-  flex: .5;
-  display: flex;
-  flex-direction: column;
-  margin: 1em 0em;
-  margin-right: 0;
-}
-
-section#services .filler {
-  margin: 0;
-  background-size: cover;
-  background-position: center;
-}
-
-@media (max-width: 500px) {
-  section#services .filler {
-    display: none;
-  }
-}
-
-section#services > div > div > ul {
-  margin: 1em 1em;
-}
-
-section#services .pricing {
-  text-align: center;
-  font-style: italic;
-  padding-bottom: 0;
-}
-
-section#services .booknow {
-  text-align: center;
 }
 
 section#contact {
