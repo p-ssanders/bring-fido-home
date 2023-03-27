@@ -76,7 +76,7 @@ section#splash > header {
 section#splash > header > h1 {
   flex: 1;
   font-family: 'Satisfy-Regular', sans-serif;
-  text-shadow: 1px 1px 1px var(--accent-color);
+  text-shadow: 0 2px 3px rgba(0,0,0,.25);;
   margin-left: 2.5em;
   font-size: 2.5em;
 }
@@ -193,16 +193,19 @@ button {
   background-color: var(--accent-color);
   color: var(--bg-color);
   border-radius: 8px;
-  transition: background-color 300ms ease;
+  transition: box-shadow 300ms, transform 200ms, background 300ms;
   border-width: 0;
   font-size: 1.25em;
   padding: .5em 2.5em;
   margin: 1em 0em;
   cursor: pointer;
+  box-shadow: inset 0 0 0 0.1em var(--accent-color), 0 2px 5px var(--fg-color);
+  text-shadow: 0 2px 5px rgba(0,0,0,.25);
 }
 
 button:hover {
   background-color: var(--accent-color-secondary);
+  box-shadow: inset 0 0 0 0.1em var(--accent-color-secondary), 0 2px 5px var(--fg-color);
 }
 
 div.filler {
@@ -235,6 +238,10 @@ section#about h2 {
     width: 100%;
     margin: 0;
     font-size: 1.5em;
+  }
+
+  section#about .split {
+    margin-top: 0;
   }
 }
 
@@ -320,16 +327,19 @@ form input[type=submit] {
   background-color: var(--accent-color);
   color: var(--bg-color);
   border-radius: 8px;
-  transition: background-color 300ms ease;
+  transition: box-shadow 300ms, transform 200ms, background 300ms;
   border-width: 0;
   font-size: 1.25em;
   padding: .5em 2.5em;
   margin: 1em 0em;
   cursor: pointer;
+  box-shadow: inset 0 0 0 0.1em var(--accent-color), 0 2px 5px var(--fg-color);
+  text-shadow: 0 2px 5px rgba(0,0,0,.25);
 }
 
 form input[type=submit]:hover {
   background-color: var(--accent-color-secondary);
+  box-shadow: inset 0 0 0 0.1em var(--accent-color-secondary), 0 2px 5px var(--fg-color);
 }
 
 form input:focus,
