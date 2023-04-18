@@ -315,7 +315,6 @@ section#contact > div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%;
 }
 
 section#contact > div > div {
@@ -328,6 +327,11 @@ section#contact > div > div {
 section#contact > div > p {
   padding: 1em 1em;
   text-align: center;
+}
+
+section#contact > div > h2 {
+  text-align: center;
+  margin-top: 4em;
 }
 
 form {
@@ -376,6 +380,7 @@ form input {
 }
 
 form input[type=submit] {
+  align-self: center;
   background-color: var(--accent-color);
   color: var(--bg-color);
   border-radius: 8px;
