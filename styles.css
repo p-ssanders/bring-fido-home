@@ -261,7 +261,7 @@ div.filler {
 }
 
 section#about {
-  background-color: var(--bg-color);
+  background-color: var(--bg-color-secondary);
 }
 
 section#about h2 {
