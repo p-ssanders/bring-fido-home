@@ -43,7 +43,7 @@ section {
 }
 
 section#splash {
-  /* background: url('images/splash.jpg') no-repeat; */
+  background: url('/images/splash.jpg') no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -262,6 +262,11 @@ div.filler {
 
 section#about {
   background-color: var(--bg-color-secondary);
+}
+
+section#about .filler {
+  background-image: url('/images/about-filler.jpg');
+  background-position: center;
 }
 
 section#about h2 {
