@@ -232,7 +232,7 @@ button {
   transition: box-shadow 300ms, transform 200ms, background 300ms;
   border-width: 0;
   font-size: 1.25em;
-  padding: .5em 2.5em;
+  padding: .5em 2em;
   margin: 1em 0em;
   cursor: pointer;
   box-shadow: inset 0 0 0 0.1em var(--accent-color), 0 2px 5px var(--fg-color);
@@ -298,6 +298,12 @@ section#contact > h1 {
   font-family: 'fancy', sans-serif;
   font-size: 2em;
   text-align: center;
+}
+
+@media (max-width: 500px) {
+  section#contact > h1 {
+    font-size: 1.9em;
+  }
 }
 
 section#contact > div {
