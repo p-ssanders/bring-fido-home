@@ -5,11 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="author" content="samsanders.dev" />
   <meta name="description" content="Bring your new dog home with the knowledge and confidence to smoothly integrate them into your home and your life." />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="preload" href="/fonts/Satisfy-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/fonts/PermanentMarker-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="preload" href="/images/splash.jpg" as="image" type="image/jpg" crossorigin>
   <title>Bring Fido Home</title>
 </head>
 <body>
@@ -19,7 +18,7 @@
         <h1>Bring Fido Home</h1>
         <nav>
           <ul>
-            <li><a href="#contact"><button>contact</button></a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -42,9 +41,19 @@
           <h2>Have you heard that bringing a new dog home is like bringing home a baby?</h2>
           <h3>Well, after having done both, it kind of is!</h3>
           <p> They are a lot of work, and there is a learning curve to overcome so that both your family and your new dog happily coexist.</p>
-          <p>Topics we'll discuss in our meeting include</p>
-          <p>Home setup * crate training * potty training * reading dog body language * first skills to teach your dog * socialization * nutrition * recommended products * recommended local trainers and classes</p>
-          <p><a href="#adina"><button>Meet Adina</button></a></p>
+          <p>Topics we'll discuss in our meeting include:</p>
+          <ul>
+            <li>Home Setup</li>
+            <li>Crate Training</li>
+            <li>potty Training</li>
+            <li>Reading Dog Body Language</li>
+            <li>First Skills to Teach Your Dog</li>
+            <li>Socialization</li>
+            <li>Nutrition</li>
+            <li>Recommended Products</li>
+            <li>Recommended Local Trainers and Classes</li>
+          </ul>
+          <div><a href="/menu.pdf"><button>Services Menu</button></a></div>
         </div>
       </div>
     </section>
@@ -67,21 +76,24 @@
           <img src="/images/adina-dog.jpg" alt="adina & dog">
         </div>
         <div class="text">
-          <h2>Why I started Fido</h2>
-          <p>Combining my personal experiences with what I have learned through working with these rescues and trainers, I noticed a gaping hole in services offered to new dog owners. There are great trainers available and great local pet stores for sourcing all your needs, but there really wasn't any good way for an individual or family to learn how best to prepare and incorporate their new furry family member into their lives and homes and to really set both person and pup up for success. After speaking with lots of people, I learned just how daunting getting a new dog can be and I wanted to change that! And so Bringing Fido Home was born!</p>
+          <h2>Why I started <span class="fancy">Bring Fido Home</span></h2>
+          <p>Combining my personal experiences with what I have learned through working with these rescues and trainers, I noticed a gaping hole in services offered to new dog owners.</p>
+          <p>There are great trainers available and great local pet stores for sourcing all your needs, but there really wasn't any good way for an individual or family to learn how best to prepare and incorporate their new furry family member into their lives and homes and to really set both person and pup up for success.
+          <p>After speaking with lots of people, I learned just how daunting getting a new dog can be and I wanted to change that! And so Bringing Fido Home was born!</p>
           <p><a href="#contact"><button>Get Started</button></a></p>
         </div>
       </div>
     </section>
     <section id="contact">
       <h1>Bring Fido Home Today</h1>
+      <p>Get in touch with Adina!</p>
       <div>
         <form id="contact-form" hx-post="https://5wbx25hgt3.execute-api.us-west-1.amazonaws.com/default/bfh-contact-form"
           hx-target="#contact">
-          <label for="name">Name (required)</label>
+          <label for="name">Name <span class="small">(required)</span></label>
           <input type="text" name="name" id="name" placeholder="Full name" maxlength="100" required>
 
-          <label for="email">E-mail (required)</label>
+          <label for="email">E-mail <span class="small">(required)</span></label>
           <input type="email" name="email" id="email" placeholder="excited@new-dog.com" maxlength="100" required>
 
           <label for="phone">Phone</label>

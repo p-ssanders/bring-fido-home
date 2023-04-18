@@ -3,12 +3,12 @@
   --bg-color-secondary: rgb(255, 190, 175, 25%);
   --fg-color: rgb(60, 60, 60);
   --accent-color: rgb(60, 90, 90);
-  --accent-color-secondary: rgb(47, 54, 95);
+  --accent-color-secondary: rgb(85, 60, 90);
 }
 
 @font-face {
-  font-family: 'Satisfy-Regular';
-  src: url('/fonts/Satisfy-Regular.ttf');
+  font-family: 'fancy';
+  src: url('/fonts/PermanentMarker-Regular.ttf');
 }
 
 @font-face {
@@ -76,8 +76,8 @@ section#splash > header {
 
 section#splash > header > h1 {
   flex: 1;
-  font-family: 'Satisfy-Regular', sans-serif;
-  text-shadow: 0 2px 3px rgba(0,0,0,.25);
+  font-family: 'fancy', sans-serif;
+  text-shadow: 0 0px 1px rgba(0,0,0,.25);
   margin-left: 2.5em;
   font-size: 2.5em;
 }
@@ -91,7 +91,7 @@ section#splash > header > h1 {
 }
 
 section#splash > header > nav {
-  margin-right: 1.5em;
+  margin-right: 4em;
 }
 
 @media (max-width: 500px) {
@@ -106,15 +106,20 @@ section#splash > header ul {
   align-items: center;
 }
 
-section#splash > header ul > li button {
-  padding: .25em .5em;
-  font-family: "Satisfy-Regular", sans-serif;
+section#splash > header ul > li {
+  padding: .5em .75em;
+  font-family: "fancy", sans-serif;
   font-size: 1em;
   margin: 0;
 }
 
-section#splash > header ul > li button:hover {
-  background-color: var(--accent-color-secondary);
+section#splash > header ul > li > a {
+  text-decoration: none;
+  color: var(--fg-color);
+}
+
+section#splash > header ul > li > a:hover {
+  color: var(--accent-color);
 }
 
 .split {
@@ -141,7 +146,7 @@ section#splash > div.split {
 }
 
 div.text {
-  margin: 6em 6em;
+  margin: 5em 5em;
 }
 
 @media (max-width: 500px) {
@@ -157,13 +162,36 @@ div.text > h2 {
 }
 
 div.text > p {
-  width: 75%;
+  width: 85%;
+}
+
+div.text > ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+div.text > ul > li {
+  padding: .5em .75em;
+  font-size: 1em;
+  margin: 0;
 }
 
 @media (max-width: 500px) {
   div.text > p {
     width: 100%;
   }
+}
+
+div.text > div {
+  display: flex;
+  justify-content: center;
+}
+
+div.text .fancy {
+  font-family: 'fancy', sans-serif;
 }
 
 section#splash h2 {
@@ -261,7 +289,7 @@ section#contact {
 section#contact > h1 {
   margin: 1em 0em;
   margin-bottom: 0;
-  font-family: 'Satisfy-Regular', sans-serif;
+  font-family: 'fancy', sans-serif;
   font-size: 2em;
   text-align: center;
 }
@@ -317,6 +345,11 @@ form label {
   margin-bottom: .2em;
   padding-left: 0;
   padding-bottom: 0;
+  font-size: .75em;
+}
+
+form label .small {
+  opacity: 50%;
   font-size: .75em;
 }
 
