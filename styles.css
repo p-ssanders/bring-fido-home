@@ -260,19 +260,12 @@ button:hover {
 
 div.filler {
   flex: .75;
-  /* background-color : var(--accent-color); */
-  /* border: 10px black solid; */
 }
 
 @media (max-width: 500px) {
   div.filler {
     display: none;
   }
-}
-
-.filler img {
-  width: 100%;
-  height: 100%;
 }
 
 section#about {
@@ -440,6 +433,7 @@ footer {
 footer > p {
   margin: 0;
   font-size: .5em;
+  text-align: center;
 }
 
 @media (max-width: 500px) {
