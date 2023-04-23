@@ -220,7 +220,7 @@ section#splash p {
 }
 
 @media (max-width: 500px) {
-  p {
+  section#splash p {
     flex: 1;
   }
 }
