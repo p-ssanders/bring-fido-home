@@ -78,7 +78,7 @@ section#splash > header > h1 {
   flex: 1;
   font-family: 'fancy', sans-serif;
   text-shadow: 1px 1px 1px rgba(0,0,0,.25);
-  margin-left: 2em;
+  margin-left: 1.5em;
   font-size: 2.5em;
 }
 
