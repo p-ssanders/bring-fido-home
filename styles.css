@@ -264,6 +264,9 @@ div.filler {
 
 @media (max-width: 500px) {
   div.filler {
+    min-height: 100vh;
+  }
+  section#splash div.filler {
     display: none;
   }
 }
